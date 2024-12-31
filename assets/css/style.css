@@ -1,0 +1,365 @@
+/* General Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d7da; /* Light pink background color */
+    color: #333;
+    line-height: 1.6;
+    background-image: url(https://blog.imsafe.app/wp-content/uploads/2022/04/15_20220922_200420_0013-2-1024x571.png);
+    background-size: cover; /* Ensures background image covers full screen */
+    background-position: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper .text-content {
+    width: 60%;
+    color: #000; /* Black text */
+    text-align: justify;
+}
+
+.content-wrapper img {
+    width: 35%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #6a0dad; /* Dark purple for heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* General Hyperlink Styles */
+a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+a:active {
+    color: #004085; /* Even darker blue when clicked */
+}
+
+a:focus {
+    outline: none; /* Removes the default focus outline */
+}
+
+/* Header Styles */
+header {
+    background-image: url(https://files.oaiusercontent.com/file-PM3b7dpSV8psZUg6bGC9DT?se=2024-12-31T14%3A54%3A17Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dd7eff184-efdd-4e67-86f3-c698a30680b2.webp&sig=2pWdu5/CgwRL/UEVSX3xwUFj7i8rjTngQQAOj3j48%2Bs%3D); /* Dark purple for header */
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    color: white; /* White color for main header text */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #6a0dad; /* Dark purple for sub-headings */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.8em;
+    color: #6a0dad; /* Dark purple for section headings */
+    margin-bottom: 5px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Resource Page Link Styles */
+section a {
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Form and Input Styling */
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(117, 5, 117);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Map and Safety Score Page */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#safetyScore {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Resource Page Custom Styling */
+#resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#resources section {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+}
+
+#resources h3 {
+    font-size: 1.5em;
+    color: #6a0dad; /* Dark purple for section headings */
+}
+
+#resources p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section h3 {
+        font-size: 1.4em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    #resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #resources section {
+        flex: 0 0 80%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    /* Form input field width and button styling */
+    input, select, button {
+        width: 100%;
+    }
+}
+
+/* Page-Specific Styling */
+
+/* Report Page */
+#report-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#report-form input, #report-form textarea {
+    margin-bottom: 15px;
+}
+
+/* Emergency Page */
+#emergency-contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#emergency-contacts li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Safety Score Page */
+.safety-score-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.safety-score-container h3 {
+    font-size: 1.8em;
+    color: #4CAF50;
+}
+
+/* Self-Defense Tutorials Page */
+.self-defense-video {
+    margin-bottom: 20px;
+}
+
+.self-defense-video iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* Personal Safety Tips Page */
+.safety-tips ul {
+    padding-left: 20px;
+}
+
+.safety-tips li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Emergency Helplines Page */
+.emergency-helplines ul {
+    padding-left: 20px;
+}
+
+.emergency-helplines li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Section Headings - Consistent Styling */
+h1, h2, h3 {
+    color: #6a0dad; /* Dark purple color for all main headings */
+}
+
+/* Specific Resource Page Section Headings */
+#resources section h3 {
+    color: #6a0dad; /* Dark purple color for section headings */
+}
+
+/* Button Styling */
+.report-incident-btn {
+    background-color: purple; /* Green background */
+    color: white; /* White text color */
+    padding: 15px 30px; /* Padding to make the button larger */
+    font-size: 1.2em; /* Font size for readability */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: center; /* Center the text inside the button */
+    display: inline-block; /* Make it behave like a link */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.report-incident-btn:hover {
+    background-color: rgb(87, 12, 87); /* Darker green on hover */
+}
+
